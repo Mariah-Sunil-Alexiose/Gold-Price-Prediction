@@ -1,0 +1,26 @@
+{% extends 'layout.html' %}
+{% block content %}
+<br>
+<br>
+<form method="POST"> 
+    <div class="row">
+        <div class="col">
+            <input type="text" class="form-control" placeholder="SPX" name="spx" id="spx">
+        </div>
+        <div class="col">
+            <input type="text" class="form-control" placeholder="USD" name="uso" id="uso">
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col">
+        <input type="text" class="form-control" placeholder="SLV" name="slv" id="slv">
+        </div>
+        <div class="col">
+        <input type="text" class="form-control" placeholder="EUR/USD" name="eur_usd" id="eur_usd">
+        </div>
+    </div>
+    <br>
+    <button type="submit" class="btn btn-primary">Predict</button>
+</form>
+{% endblock %}
